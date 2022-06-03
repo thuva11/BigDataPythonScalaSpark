@@ -1,0 +1,854 @@
+Python:
+Invented by Guido van Rossum (from Netherlands) in the early 90s.
+Named after Monty Python.
+Open sourced from the beginning.
+Considered to be a scripting language, but it is actually a lot more.
+It is object oriented.
+It is also an interpreted language.
+It is very scalable.
+Google has been using it for a very long time.
+Increasingly popular, especially with ML.
+
+Factors:
+It is object oriented as well as non-OO.
+Is very strict about indentation of the code.
+It is case-sensitive.
+Open source.
+Portable.
+Automatic memory management.
+Easy to use and learn.
+
+
+Python "REPL mode".
+REPL: Read-Evaluate-Print-Loop
+
+print("hello")
+
+Jupyter Notebooks (creates files with extension .ipynb).
+
+Pyhton Idnetifiers and Keywords:
+What are keywords?
+	predefined and reserved words in Python.
+	
+and
+or
+not
+if
+else
+elif
+for
+while
+break
+as
+def
+pass
+lambda
+return
+True
+False
+try
+with
+class
+continue
+finally
+import
+from
+None
+yield
+raise
+in
+global
+is
+
+Identifiers:
+Variables that hold values:
+width = 10
+Here, width is a variable / identifier.
+Function names:
+def foo():
+	print("This is foo()")
+Here, "foo" is an identifier.
+
+Rules for identifiers:
+- It is a combination of alphabets and numbers and underscores.
+- It should start with an alphabet (A-Z, a-z) or an underscore (_) followed by other alphabets, numbers (0-9) and underscores.
+- Cannot have special characters like @, !, $, %, &, #, * etc.
+- Variable names cannot be keywords.
+
+For e.g.: valid identifiers:
+var
+var1
+_var1
+_var_1
+var_1
+
+Invalid identifiers:
+1var
+!var
+var!
+var$
+var#1
+2_var
+
+You cannot use a keyword as an identifier. For e.g.;, the following will not work:
+and = 10
+def while():
+	: some code :
+
+All keywords in Python are in lower case, except True and False.
+
+True and False are booleans.
+=  is  used to assign a value to a variable.
+== is used for comparison (to check for a condition)
+
+if-else block
+Syntax:
+if(condition):
+	1 or more statements
+else:
+	1 or more statements
+
+and: Logical operator.
+if(cond1 and cond2):
+	print("....")
+else:
+	....
+
+With "and", even if one of the conditions fails (is False), the entire expression fails.
+T and T = T
+T and F = F
+F and T = F
+F and F = F
+
+or: Logical operator.
+if any one of the conditions is True, the entire expression is True.
+T or T = T
+T or F = T
+F or T = T
+F or F = F
+
+Order of precedence:
+if((a or b) and c)
+and takes precedence over or.
+but parentheses () take precedence over everything else.
+
+x = a and b
+if(a and b):
+	if(x or c):
+
+
+!= not equals operator
+
+!True is False
+!False is True
+not variablename denotes you are checking for "variablename == False" or "variablename != True"
+
+if-elif-else means if-else if-else
+
+Simple and Compound Statements:
+In Python we write code blocks.
+Each code block contains a set of statements.
+These statements can be classified as Simple or Compound statements.
+A Python program contains a collection of these statements: assingments, expressions, functions, loops, computations etc.
+
+Simple Statements:
+meant for simple operations and are mostly written in a single line of code.
+For e.g.;
+x = 10
+assign the literal value 10 to the variable x. It is an assignment expression.
+
+x = 10 * 13
+This is an expression statement, which is also a simple statement as it is simply evaluating the expression 10 * 13 and assigning the result to the variable x.
+
+Other simple statements in Python:
+break
+continue
+return
+import
+
+Compound Statements:
+Comprise of a group of statements (blocks of code) that are executed when a specific condition is satisfied.
+Statements in a function, that will be executed only when you call the function.
+For e.g.;
+The if statement
+The different loops: 
+	while 
+	for
+The try statement (a.k.a. exception handling block).
+
+Values, Types and Variables.
+Values can be characters, numbers, a combo of these etc.
+Values belong to different types like integer, string, boolean etc.
+
+Built-in data types in Python:
+String: str
+Numbers: int, float, complex
+Booleans: bool
+Sequence Types: list, tuple, range
+Mapping type: dict
+Set types: set, frozenset
+
+Loops:
+The "while" loop: 
+	execute a block of code as long as a condition is satisfied.
+	When the condition is not satisfied (false), exit out of the loop.
+	
+Syntax:
+
+while(condition):
+	code
+	code
+	code
+	if(some condition):
+		break
+		
+	if(some other condition):
+		continue`
+	
+	code
+	code
+
+Code outside of the while loop
+code
+code
+
+The 'for" loop:
+for variable in a_range_of_values:
+	statements
+
+Assignments can be chained.
+a = b = c = d = 25
+
+Swap values:
+x,y = 2,3
+print(x)
+print(y)
+
+x,y = y,x   # swap the numbers.
+print(x)
+print(y)
+
+Functions:
+def function_name([parameters]):
+	statements
+	statements
+	
+function_name()
+function_name(1,2)
+
+Tuples:
+A collection of values.
+A simple immutable ordered sequence of items.
+Items can be of mixed types, including other collections.
+Are represented using parentheses.
+
+Any literals are immutable. These won't work.
+2 = 10
+"John Smith" = "Ajay"
+
+('John', 32, 123.45)
+('John', 32, 123.45, (555-1234, 555,6789))
+
+Slicing is later.
+
+people = (
+('John', 32, 123.45, ('555-1234', '555-6789')), 
+('Mary', 33, 456.78, ('555-3324', '555-8889')),
+('Joe', 28, 185.78, ('555-1324', '555-0889'))
+)
+
+print(people) 
+print(people[0])
+print(people[0][0])
+print(people[0][3])
+print(people[0][3][0])
+
+Re-declare variables.
+x = 10
+:
+:
+x = "ABC"
+
+
+Python variables have 2 scopes: Global and Local.
+If a variable is defined outside a function, it cannot be directly referenced / used within any function.
+A variable defined within a function is accessible only within the function where it has been defined and it does not have any impact on the variable of the same name defined globally (i.e.; outside any function).
+
+Identifying a variable as "global" within a function makes that variable (which was defined outside the function) accessible and mutable inside the function. Any changes made to this global variable (value updated) will be visible even after the function completes.
+
+Python Process Map.
+
+In Visual Studio Code (VSC), create your . py file and save it.
+Press CTRL+SHIFT+P to open the command pallette and enter Python: Select Interpreter
+Select the appropriate Python executable.
+Then, Run -> Run Without Debugging (or press CTRL+F5)
+
+Comment line(s) in VSC: CTRL+K, CTRL+C.
+UnComment line(s) in VSC: CTRL+K, CTRL+U.
+
+Slicing:
+t[n:m]
+	Start from element #n (elements/indexes starts from 0) and return elements upto m-1.
+t[1:4] this will give elements from 1 to 3 and not 1 to 4.
+t[:2]
+if "n" is omitted, it starts from the 1st element, which is position 0.
+this will return values from 0 to 1 (2-1)
+
+t[2:]
+will return from elem 2 till end of the collection.
+if "m" is omitted, it returns all vaules till the end.
+
+List:
+A collection of values.
+A mutable ordered sequence of items.
+Items can be of mixed types, including other collections.
+Are represented using square brackets [].
+
+list1 = [1,2, "abc"]
+
+The "in" operator:
+To look for values with a list or tuple.
+print(32 in list1)
+print("John" in list1)
+
+The "+" operator concats tuples / lists.
+	(1,2,3) + (4,5,6) will give (1,2,3,4,5,6)
+The "*" operator multiplies the values in the list/tuple for the given number.
+	(1,2,3) * 3 will give (1,2,3,1,2,3,1,2,3)
+	
+Operations that be performed on a list but not on a tuple:
+append(value) - add value to the end of the list.
+insert(n, value) - insert the value at position "n" (0-based index).
+sort() - sort the list in-place.
+count(value) - count the no. of occurances of value.
+remove(value) - remove the 1st occurance of value.
+index(value) - index no. of the 1st occurance of value.
+
+
+Multipline statements are created using the back-slash (\).
+
+Arithmetic Operators: + - * / % **
+Relational operators: = == > >= < <= != 
+Logical operator: and or not
+Assignment operators: += -= *= /=
+Identity operators: is, is not
+	is - returns true of 2 variables point to the same object and false otherwise.
+	is not - it returns false of 2 variables are pointing to the same objec and true otherwise.
+Membership Operators: in, not in.
+	in - returns true of value is found in a sequence (list/tuple).
+	not in - returns true of value is not found in a sequence (list/tuple).
+
+Order of precedence:
+PEMDAS: Parentheses, Exponent, Multiply, Divide, Add, Subtract.
+
+Taking input from the user:
+name = input()
+
+Comments:
+# This is a single line comment.
+
+""" Here is an example of a multi-line comment.
+Enter any number of lines between the quotes."""
+
+'''
+Here is an example of a multi-line comment.
+Enter any number of lines between the single quotes.
+'''
+
+DOCSTRING:
+It is a multi-line comment used to provide documentation for functions, classes etc.
+
+Nested conditions:
+if(cond):
+	code
+	code
+	if(cond2):
+		code
+		code
+	
+	code
+	code
+	
+	if(cond3):
+		code
+		code
+else:
+		code
+		code
+	
+
+Exception handling:
+try:
+	code
+	code
+	code
+except:
+	code (usually, display a user-friendly message)
+
+Functions:
+We need functions for abstraction and reusability.
+DRY: Don't Repeat Yourself
+Gives you modularity.
+Easy to maintain code.
+
+def read_file(filename):
+	code
+	
+def process_file(filename):
+	code
+	return result
+	
+def write_file(data_to_be_written):
+	code
+	
+while(...):
+	# read one file at a time.
+	read_file(filename)
+	res = process_file(filename)
+	write_file(res)
+
+Random:
+import random
+
+for i in range(5):
+    x = random.random()
+    print(x)
+
+random.randint(5,10)
+random.randint(25,100)
+
+numbers = [1,2,5,8,9,21,30]
+random.choice(numbers)
+    
+Math functions:
+import math
+print(math.pi)
+print(math.sqrt(16))
+
+Positional parameters:
+Interpolation: enclose variables in {} when printing. Use print(f"{variable}")
+def foo(qty, item, price):
+    print(f"{qty} numbers orderd for {item} at {price} per unit")
+
+foo(10, "Pens", 3.99)
+foo(10, "Pens")		# Error.
+
+Keyword arguments (named parameters):
+def foo(qty, item, price):
+    print(f"{qty} numbers orderd for {item} at {price} per unit")
+
+foo(qty = 24, item = "apples", price = 2.59)
+foo(item = "apples", price = 2.59, qty = 24)
+foo(item = "apples", qty = 24)		# Error.
+
+Default values for parameters.
+# Positional Arguments.
+def foo(item, qty = 15, price = 2.99):
+    print(f"{qty} numbers orderd for {item} at {price} per unit")
+    # amount = qty * price
+    # print(amount)
+
+foo(10, "Pens", 3.99)
+foo(10, "Pens")
+
+foo(qty = 24, item = "apples", price = 2.59)
+foo(item = "apples", price = 2.59, qty = 24)
+foo(item = "apples", qty = 24)
+
+Lambda Functions a.k.a. Anonymous Functions:
+Lambdas are little, anonymous functions with a very specific syntax.
+Example:
+lambda x: x + 1
+
+Equivalent to:
+def lambda2(x):
+	return x + 1
+
+to use: lambda2(10)
+
+lambda x: x + 1
+Here,
+	lambda is the keyword to define the anon function.
+	x is a bound variable.
+	x + 1 is the body of the function.
+	
+Examples:
+print((lambda x: x + 1)(10))
+
+add_one = lambda x: x + 1
+print(add_one(20))
+
+answer = add_one(100)
+print(answer)
+
+fullname = lambda firstname, lastname: f'Full name is: {lastname}, {firstname}'
+print(fullname("John", "Smith"))
+
+add_two_numbers = lambda x, y: x + y
+print(add_two_numbers(10,20))
+print(add_two_numbers(110,120))
+
+res = (lambda x, y: x + y)(10,20)
+print(res)
+
+# named params (keyword arguments)
+print((lambda x,y,z: x + y + z)(1,2,3))
+print((lambda x,y,z=5: x + y + z)(1,2))
+print((lambda x,y,z=5: x + y + z)(1, y=10))
+
+print(fullname(firstname="Mary", lastname="Jane"))
+
+summ_of_nums = lambda *numbers: sum(numbers)
+print(summ_of_nums(1,2,3))
+print(summ_of_nums(1,2,3,4,5,6))
+
+Exceptions: try-except block.
+Error vs Exception?
+
+try:
+
+except:
+
+else:
+
+finally:
+
+You can raise an exception using "raise".
+what is "pass"? It is a placeholder.
+
+# Handle specific exceptions.
+try:
+    with open('file.txt') as file:
+        lines = file.read()
+        print(lines)
+
+    divide(10,2)
+
+    #raise Exception("This is to test multiple except blocks...")
+except FileNotFoundError as fnf_error:
+    #print("File could not be read")
+    print(fnf_error)
+except ZeroDivisionError as dbz_error:
+    print(dbz_error)
+except:
+    print("Something went wrong...")
+else:
+    print("This executes when there are NO EXCEPTIONS!!!")
+finally:
+    print("Is executed no matter what, whether there was an exception or not!")
+	
+
+else: 		block is executed when there are no exceptions.
+finally: 	block is executed whehter or not there was an exception. It is always executed!
+			finally block is used for "clean up" purposes.
+
+
+Strings:
+A String is also a sequence (or collection) of characters.
+So, it can be accessed using index numbers (like a list).
+
+
+How to delete or remove items from a list:
+list.remove(value)
+pop operator: list.pop(n)	- pops (removes) element no. "n" from the list and returns that value.
+del operator: del list[n]	- removes the element no. "n", does not return anything.
+
+x = list.pop(1)
+
+list.pop(1) is same as del list[1]
+
+Collections:
+Dictionary: a mapping of key-value pairs. Represented using curly-braces {}.
+
+dict1 = dict()
+dict1["one"] = 1
+dict1["two"] = 2
+
+Access values:
+dict1["one"]
+dict1.get("one")
+
+Change or add elements in a dictionary:
+dict[key] = value
+if the key exists, the value will be overwritten.
+if the key does not exist, a new key-value pair will be added to the dictionary.
+You cannot change the key itself.
+
+Get list of values and keys:
+print(dict1.values())
+print(dict1.keys())
+
+# Check if a value exists in a dictionary.
+vals = dict1.values()
+keys = dict1.keys()
+
+print("Tri" in vals)
+print("Three" in keys)
+
+Delete a value from a dictionary:
+
+# Delete a specific key-value item.
+print(dict1.pop("Four"))
+print(dict1)
+
+del dict1["Three"]
+print(dict1)
+
+# Delete an arbitrary key-value pair.
+print(dict1.popitem())
+
+Some other dictionary functions:
+clear()	- remove all items.
+copy() - creates a copy.
+items() - returns a list of the key-value pairs as tuples. Each KV pairs is a tuple in the list.
+
+
+for item in dict1.items():
+    print(item)
+
+print(list(sorted(dict1.keys())))
+
+
+Collection: Sets:
+Unordered, unique elements, mutable.
+x = set(['foo', 'bar', 'foobar', 'bar', 'quad', 'foo'])
+
+Represented using {}.
+
+Object Oriented Programming Concepts:
+To create a class, use the keyword class followed by the class name.
+For e.g.;
+class Dog:
+	methods
+	properties
+	
+__init__() is a constructor (ctor) method of a class.
+
+class BMW:
+	color
+	engineType
+	
+	Start():
+	
+	Stop():
+	
+bmw = new BMW()
+bmw2 = new BMW()
+bwm3 = new BMW()
+
+In Python, you inherit by speicifying the parent class as a "param" to the sub-class
+class Student(Person):
+	code
+	code
+	
+Polymorphism can be achieved only if there is Inheritance!!!
+
+OOP Concepts to remember:
+Inheritance
+Polymorphism
+Abstraction
+Encapsulation
+
+File I/O or File handling:
+open(filename, mode)
+possible mode values are:
+	r	for reading
+	w	for writing
+	a	for appending
+	r+	for reading and writing
+	x	Creates a new file. If already exists, the operation fails.
+	t 	Opens the file in text mode (default mode)
+	b	This is for binary mode.
+	+	same as r+ (reading and writing)
+	
+"mode" param is optional.
+If not provided, it defaults "rt"
+
+file = open("file.txt")
+file = open("file.txt", "r")
+print(file.read())
+
+Methods to read files:
+read()
+readlines()
+
+Write to files:
+write()
+append()
+
+
+main(), __name__, modules:
+
+Logging in Python:
+Levels of severity:
+	DEBUG
+	INFO
+	WARNING
+	ERROR
+	CRITICAL
+
+By default, the logging level is set to "WARNING".
+
+
+Regular Expressions:
+^ beginning of line
+$ end of line
+* 0 or more characters
+. a single character
+
+[a-m]
+he..o hello, heiio, helio, 
+fail | pass
+ai{2} exactly 2 occurances of "ai".
+
+APIs:
+Application Programming Interface.
+Utilities or programs that were reusable (assemblies) - .DLL (Dynamic Linked Libraries)
+
+web sites:
+Web Services: are web sites without a UI.
+	XML-based
+	No proper standardization of webServices between different platforms (.NET C#, Java).
+Web APIs:
+	they are web services only, but better.
+	most APIs send and receive data in JSON format by default.
+	much easier to use and simpler to understand.
+	
+Why APIs:
+The data is changing quickly: Stocks price data.
+There is a lot of data, but you only need a subset of it: Reddit.
+
+Web Services:
+https://jsonplaceholder.typicode.com/todos?id=5
+
+https://jsonplaceholder.typicode.com/customers/?firstname=john&lastname=smith
+
+Modern APIs, they work on the concept of REST (RESTful APIs).
+REST: REpresentational State Transfer
+
+Features (guidelines) of REST Architecture:
+Stateless: The API does not maintain state (it does not remember what the client (user) did in the previous request).
+Client-server: there is a client and a server.
+Cacheable: What is caching? Cache the data.
+Uniform Interface: 
+	https://jsonplaceholder.typicode.com/todos/5	GET a specific record.
+	https://jsonplaceholder.typicode.com/todos		GET ALL DATA.
+
+HTTP Methods:
+GET		: Retrieve an existing resource (data).
+POST	: Create a new resource.
+PUT		: Update an existing resource.
+DELETE	: Delete an existing resource.
+
+HTTP Response Codes:
+2xx	: Successful operation.
+3xx	: Redirection.
+4xx	: Client error.
+5xx	: Server error.
+
+Some typical response codes:
+200	OK						The requested action was successful.
+201	Created					A new resource was created successfully.
+400	Bad request				A malformed request.
+401 Unauthorized			The client is not authorized to perform the specific action.
+404	Not found				The requested resource was not found.
+500	Internal Server Error	The server threw an error when processing the request.
+
+Using APIs in Python:
+Install a module/package called "requests"
+	pip install requests
+	OR
+	python -m pip install requests
+	OR
+	py -m pip install requests
+	
+URLS for the HTTP Methods:
+GET: 	https://jsonplaceholder.typicode.com/todos			# Get all resources.
+		https://jsonplaceholder.typicode.com/todos/1		# Get a single resource with id 1.
+POST:	https://jsonplaceholder.typicode.com/todos			# Requires data in the body.
+PUT:	https://jsonplaceholder.typicode.com/todos/1		# Update an existing resource with id 1. Requires data in the body.
+DELETE:	https://jsonplaceholder.typicode.com/todos/1		# Deletes an existing resource with id 1.
+
+
+https://jsonplaceholder.typicode.com/todos			GET ALL or POST?
+https://jsonplaceholder.typicode.com/todos/1		GET a resources OR PUT or DELETE??
+
+Unit Testing:
+Unit testing is the first level of testing of the smallest unit of work created by a developer.
+It is done by the developer themself for the work created by them.
+
+1 form of unit testing is doing manual testing by running the code.
+But what is required is automation. Does the code work properly when excuted from another code? Proobably with different values.
+Also, does it handle invalid data properly?
+
+AAA approach of unit testing:
+- Arrange	: Arrange (configure, setup, gather the data).
+- Act		: Call the method to be tested with appropriate data.
+- Assert	: Check if the method returns expected data/value.
+
+In Python, use the "unittest" framework for unit testing.
+Test fixture: baseline environment for running your tests.
+Test Case: a set of conditions or scenarios that you will be testing.
+Test Suite: a collection of test cases.
+Test Runner: the tool / component used for the execution of the unit tests.
+
+
+PyTest:
+pip install pytest
+OR
+python -m pip install pytest
+OR
+py -m pip install pytest
+
+
+Automation:
+Developer completes coding and pushes the code to the project repository, an automatic build is triggered that will compile and build and package the application and immediately deploy it to the server.
+One of the tasks in this automated build-n-deploy is executing Unit Tests!!!
+So, if any unit test fails, the build job fails!!!
+
+As part of unit tsting, you should test for positive as well as negative tests.
+
+Coverage:
+How many lines of code is your unit tests covering?
+
+def foo(x):
+	code
+	code
+	if(x < 10):
+		code
+		code
+		
+	code
+	code
+	
+	if(x > 10 and x < 50):
+		code
+		code
+		
+	code
+	
+	return something
+	
+def test1_with10():
+	assert foo(5) = something
+	
+def test1_with10():
+	assert foo(12) = something
+	
+coverage run -m pytest 
+coverage run -m pytest test_filename
+coverage html
+	this will generate a folder named "htmlcov".
+	In this folder, open the index.html file in a browser to view coverage details.
+	
+JSON:
+key-value pairs.
+Dictionary.
+
+PyLint:
+pip install pylint
+OR
+python -m pip install pylint
+OR
+py -m pip install pylint
+

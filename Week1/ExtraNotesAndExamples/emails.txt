@@ -1,0 +1,13 @@
+asdf@asdf.com This is a random string of words with
+some ghr@irn.net emails mixed in. Your job is to create
+a regular potrjeb@asdf expression that can find all of 
+the valid emails in this file. Be careful thoughm, there
+are some strings like asdfert3456@vfr that look like 
+emails email@web.com but actually are not proper syntax
+for emails. Do your best! You should find that gk77@email.com
+there are 6 hgte456@covid.gov emails throughout this 
+file. Some of them have weird names 123abc@easy.ume but
+a valid email qwerasdf@qwer consists of alphanumeric 
+characters, including underscores, followed by an '@'
+symbol, then more alphanumeric symbols, followed by a
+'.' then a 2-4 letter code.

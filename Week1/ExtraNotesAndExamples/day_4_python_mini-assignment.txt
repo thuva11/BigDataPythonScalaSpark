@@ -1,0 +1,15 @@
+DAY 4 PYTHON MINI_ASSIGNMENT
+
+
+Create functions that satisfy each of the following constraints:
+
+1) def create_Counter(lst):
+Write a Python function that creates a Counter given an inputed list. Print out the contents of the counter in order
+from most instances to least.
+
+2) def named_Tuple(lst_tuples):
+Write a Python function that returns a list of namedtuples given a list of tuples. Your named tuples should also include
+an extra element at the end that incorporates a datetime object
+
+3) def find_emails(file_name):
+Write a Python function that takes in a file name and returns a list of emails that are found in that file. Be sure to use Regex!
