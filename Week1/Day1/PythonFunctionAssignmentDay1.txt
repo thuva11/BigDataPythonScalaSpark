@@ -1,0 +1,8 @@
+1. Write a Python program to compute the sum of the two given integer values. If the two values are the same, then return triples their sum. 
+2. Write a Python program to create a new string with the last char added at the front and back of a given string of length 1 or more
+3. Write a Python program to get the absolute difference between n and 51. If n is greater than 51 return triple the absolute difference.
+4. Write a Python program to check two given integers, and return true if one of them is 30 or if their sum is 30.
+5. Write a Python program to check a given integer and return true if it is within 20 of 100 or 300.
+6. Write a Python program to create a new string where 'if' is added to the front of a given string. If the string already begins with 'if', return the string unchanged
+7. Write a Python program to remove the character in a given position of a given string.The given position will be in the range 0...string length -1 inclusive. 
+8. Write a Python program to exchange the first and last characters in a given string and return the new string. 

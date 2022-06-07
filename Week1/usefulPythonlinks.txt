@@ -1,4 +1,4 @@
-#use incognito mode on browser to you can view without signing up for an account
+#use incognito mode on browser so you can view without signing up for an account
 
 https://www.w3schools.com/python
 
@@ -58,3 +58,9 @@ https://www.geeksforgeeks.org/assign-function-to-a-variable-in-python/
 https://www.analyticsvidhya.com/blog/2021/07/python-most-powerful-functions-map-filter-and-reduce-in-5-minutes/
 
 https://towardsdatascience.com/using-map-and-filter-in-python-ffdfa8b97520
+
+https://boscacci.medium.com/why-and-how-to-make-a-requirements-txt-f329c685181e
+
+https://code.visualstudio.com/docs/languages/python
+
+https://code.visualstudio.com/docs/python/environments
