@@ -830,10 +830,7 @@ To run the test you use the following(just put the path to the package if you wa
 ```cli
 pytest path\to\test.py
 ```
-You can also add a -y if you want to see the readout of the tests (if you use print(), for instance)
-```cli
-pytest -y path\to\test.py
-```
+
 Running the tests before you implement the functions will of course show them as failing. That is ok: you know have concrete goals for how to implement your code
 ```python
 import numbers
