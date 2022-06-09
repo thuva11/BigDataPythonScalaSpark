@@ -654,7 +654,16 @@ dict((i, i **2) for i in range(5))
 ### Itertools Module
 The standard library itertools module has a collection of generators for many common data algorithms. For example, groupby takes any sequence and a function, grouping consecutive elements in the sequence by return value of the function. Here’s an example:
 ```Python
-#will add in example soon
+import itertools
+  
+  
+L = [("a", 1), ("a", 2), ("b", 3), ("b", 4)]
+  
+# Key function
+key_func = lambda x: x[0]
+  
+for key, group in itertools.groupby(L, key_func):
+    print(key + " :", list(group))
 ```
 Check out the [official Python documentation](https://docs.python.org/3/library/itertools.html) for more on this useful built-in utility module.
 
@@ -785,6 +794,20 @@ In [58]: np.eye(10)
 #       [0., 0., 0., 0., 0., 0., 0., 1., 0., 0.],
 #       [0., 0., 0., 0., 0., 0., 0., 0., 1., 0.],
 #       [0., 0., 0., 0., 0., 0., 0., 0., 0., 1.]])
+```
+### Pandas 
+```Python
+import pandas as pd
+
+first_letter1=lambda x:(x[0],x)
+names = ['Alan','Adm','Wes','Will','Albert','Steven']
+namesPairs=list(map(first_letter1,names))
+
+df = pd.DataFrame(namesPairs, columns =['first letter','name'])
+#print(df)
+#print([y for x,y in df.groupby('first letter').groups])
+x=df.groupby('first letter').groups
+print(x)
 ```
 ### Other Examples
 Be careful with:
