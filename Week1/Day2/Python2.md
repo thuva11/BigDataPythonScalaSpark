@@ -654,15 +654,7 @@ dict((i, i **2) for i in range(5))
 ### Itertools Module
 The standard library itertools module has a collection of generators for many common data algorithms. For example, groupby takes any sequence and a function, grouping consecutive elements in the sequence by return value of the function. Here’s an example:
 ```Python
-import itertools
-first_letter = lambda x: x[0]
-names = ['Alan', 'Adam', 'Wes', 'Will', 'Albert', 'Steven']
-for letter, names in itertools.groupby(names, first_letter):
-    print(letter, list(names)) # names is a generator
-#A ['Alan', 'Adam']
-#W ['Wes', 'Will']
-#A ['Albert']
-#S ['Steven']
+#will add in example soon
 ```
 Check out the [official Python documentation](https://docs.python.org/3/library/itertools.html) for more on this useful built-in utility module.
 
