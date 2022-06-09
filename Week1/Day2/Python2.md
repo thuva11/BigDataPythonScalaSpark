@@ -451,15 +451,13 @@ Now, suppose we wanted to get a single list containing all names with two or mor
 ```Python
 names_of_interest = []
 for names in all_data:
-    enough_es = [name=="Steven" for name in names if name.count('e') >= 2]
+    enough_es = [name for name in names if name.count('e') >= 2]
     names_of_interest.extend(enough_es)
 ```
 You can actually wrap this whole operation up in a single nested list comprehension, which will look like:
 ```Python
-result = [name for names in all_data for name in names
-    if name.count('e') >= 2]
-result
-#['Steven']
+flattenedName=[x for List in all_data for x in List]
+result = [name for name in flattenedName if name.count('e')>=2]
 ```
 Take another example where we “flatten” a list of tuples of integers into a simple list of integers:
 ```Python
@@ -580,9 +578,12 @@ strings = ['foo', 'card', 'bar', 'aaaa', 'abab']
 ```
 Here we could pass a lambda function to the list’s sort method:
 ```Python
-strings.sort(key=lambda x: len(set(list(x))))
+strings=['foo','card','bar','aaaa','abab']
+strings2=sorted(strings,key=lambda x: len(x))
+strings2
+
+strings.sort(key=lambda x: len(x))
 strings
-#['aaaa', 'foo', 'abab', 'bar', 'card']
 ```
 
 One reason lambda functions are called anonymous functions is that , unlike functions declared with the def keyword, the function object itself is never given an explicit `__name__` attribute
