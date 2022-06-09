@@ -805,7 +805,6 @@ namesPairs=list(map(first_letter1,names))
 
 df = pd.DataFrame(namesPairs, columns =['first letter','name'])
 #print(df)
-#print([y for x,y in df.groupby('first letter').groups])
 x=df.groupby('first letter').groups
 print(x)
 ```
@@ -873,6 +872,18 @@ d.tricks
 e.tricks
 #['play dead']
 ```
+### Collections
+```Python
+# Tally occurrences of words in a list
+import collections as col
+cnt = col.Counter()
+for word in ['red', 'blue', 'red', 'green', 'blue', 'blue']:
+     cnt[word] += 1
+print(cnt)
+print(type(cnt))
+```
+There are several more. see language docs for [collections](https://docs.python.org/3/library/collections.html)
+
 Along with links, sources:
 
 McKinney, Wes. Python for data analysis: Data wrangling with Pandas, NumPy, and IPython. " O'Reilly Media, Inc.", 2018.
