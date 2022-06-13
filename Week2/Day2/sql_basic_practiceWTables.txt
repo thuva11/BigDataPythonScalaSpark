@@ -400,7 +400,7 @@ CREATE TABLE Products(
 	SupplierID int,
 	CategoryID int,
 	Unit varchar(255),
-	Price float
+	Price float,
 	Primary Key(ProductID)
 );
 INSERT INTO Products(ProductID, ProductName, SupplierID, CategoryID, Unit, Price)
