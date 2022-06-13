@@ -79,3 +79,8 @@ for i in result:
     print(i)
 
 connection.close()
+
+-----------------------------------------------------------------
+#also a very good resource:
+
+#https://medium.com/analytics-vidhya/working-efficiently-with-large-data-in-pandas-and-mysql-or-any-other-rdbms-1d7376936763
