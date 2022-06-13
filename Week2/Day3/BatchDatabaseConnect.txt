@@ -47,3 +47,35 @@ cursor = cnx.cursor()
 cnx.close()
 
 8. deactivate
+
+----------------------------------------------------------------------------
+#or I like this better:
+
+1. pip install PyMySQL
+2. received error message about password and fixed with 
+	pip install cryptography
+
+3.https://www.dataquest.io/blog/sql-insert-tutorial/
+
+import pymysql
+
+connection = pymysql.connect(host='localhost',
+                             user='root',
+                             password='p4ssword',
+                             db='test'
+                             )
+
+cursor = connection.cursor()
+
+sql = "SELECT * FROM `users`"
+cursor.execute(sql)
+
+# Fetch all the records and use a for loop to print them one line at a time
+result = cursor.fetchall()
+for i in result:
+    print(i)
+
+for i in result:
+    print(i)
+
+connection.close()
