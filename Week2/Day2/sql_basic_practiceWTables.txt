@@ -219,11 +219,6 @@ SELECT COUNT(CustomerID), Country FROM Customers GROUP BY Country HAVING COUNT(C
 SELECT COUNT(CustomerID), Country FROM Customers GROUP BY Country HAVING COUNT(CustomerID) > 2 ORDER BY Customer DESC;
 ------SQL statement returns TRUE and lists the suppliers with a product price less than 20:
 SELECT SupplierName FROM Suppliers WHERE EXISTS (SELECT ProductName FROM Products WHERE Products.SupplierID = Suppliers.supplierID AND Price < 20);
---------SQL statement lists the ProductName if it finds ANY records in the OrderDetails table has Quantity larger than 1000 (this will return FALSE because the Quantity column has no values larger than 1000):
-SELECT ProductName FROM Products WHERE ProductID = ANY (SELECT ProductID FROM OrderDetails WHERE Quantity > 1000);
-
---------SQL statement lists the ProductName if ALL the records in the OrderDetails table has Quantity equal to 10. This will of course return FALSE because the Quantity column has many different values (not only the value of 10):
-SELECT ProductName FROM Products WHERE ProductID = ALL (SELECT ProductID FROM OrderDetails WHERE Quantity = 10);
 
 ---------SQL goes through conditions and returns a value when the first condition is met:
 SELECT OrderID, Quantity,
