@@ -17,6 +17,7 @@ A Python CLI (Command Line Interface) application.  Data should be parsed from a
 - Python 3
   - File I/O
   - Collections
+  - utilize OOP
 - MySQL
 - git SCM (+ GitHub)
 
