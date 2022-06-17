@@ -37,4 +37,4 @@
 - Git + GitHub
 
 ### Due Date
-- Presentations will take place on Wednesday, 3/30.
+- Presentations will take place on Friday, 7/8.
