@@ -51,7 +51,7 @@ cd .. -> '..' is processed by removing the immediately previous pathname compone
 for listing the data in the folders
 
 ls -> list down
-ls -t -> Open Last Edited File
+ls -t -> sort by modification time
 ls -1 -> Display One File Per Line 
 ls -l -> Display All Information About Files/Directories 
 ls -lt -> Order Files Based on Last Modified Time

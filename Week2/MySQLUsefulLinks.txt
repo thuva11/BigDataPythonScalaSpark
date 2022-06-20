@@ -35,5 +35,9 @@ https://relational.fit.cvut.cz/
 https://dev.mysql.com/doc/refman/8.0/en/create-table-foreign-keys.html
 https://learnsql.com/blog/referential-constraints-foreign-keys-mysql/
 
+https://learnsql.com/blog/referential-constraints-foreign-keys-mysql/#:~:text=The%20ON%20UPDATE%20CASCADE%20tells,%E2%80%9D)%20with%20the%20new%20value.
+
 -- for reading from csv
 https://stackoverflow.com/questions/63264360/error-code-2068-file-requested-rejected-due-to-restrictions-on-access-with-root
+
+

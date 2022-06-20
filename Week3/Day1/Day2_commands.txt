@@ -9,14 +9,14 @@ df
 df /home/wterry/
 df -a  ->If you want to display all the file system, use -a option.
 df --total  ->To get complete grand total, use –total option
-
+du 
 
 2)fdisk
 
 fdisk is a menu-driven command-line utility that allows you to create and manipulate partition tables on a hard disk.
 Be aware that fdisk is a dangerous tool and should be used with extreme caution. Only root or users with sudo privileges can manipulate the partition tables.
 
-fdisk -l /dev/sda
+sudo fdisk -l /dev/sda
 
 fdisk /dev/sdb
 
@@ -27,7 +27,7 @@ While sfdisk is similar to fdisk, there are few partition manipulation activitie
 
 sfdisk -l
 
-sfdisk -l /dev/sdd
+sudo sfdisk -l /dev/sdd
 
 
 
@@ -51,7 +51,7 @@ The blkid command allows you to display information about available block device
 For each listed block device, the blkid command displays available attributes such as its universally unique identifier (UUID), file system type (TYPE), or volume label (LABEL).
 
 blkid
-blkid /dev/vda1
+sudo blkid /dev/sda
 
 7)mdadm
 MDADM command is used to monitor and manage software RAID devices. RAID is nothing but a technique used for Performance management and Reduce data redundancy.
