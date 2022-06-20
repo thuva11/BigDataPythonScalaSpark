@@ -379,9 +379,9 @@ hdfs dfs -mkdir -p /user/maria/wordcount1
 HDFS Commands after Installation:
 
 1. Transfer file from Local Linux system to Hadoop HDFS
-hdfs dfs -put /home/maria/hadoop/hadoop-3.3.3/README.txt  /user/maria/
+hdfs dfs -put /home/wterry/hadoop/hadoop-3.3.3/README.txt  /user/wterry/
 verify:
-1.1. hdfs dfs -ls /user/maria
+1.1. hdfs dfs -mkdir -p /user/wterry
 
 1.2. hdfs dfs -ls /
 
@@ -390,11 +390,11 @@ hdfs dfs -mkdir /first
 
 Other commands
 1. pwd  (present working directory)
-/home/maria/hadoop/hadoop-3.3.3
+/home/wterry/hadoop/hadoop-3.3.3
 
-2. hdfs dfs -ls /user/maria    (/user/maria  = hdfs location in hadoop)
+2. hdfs dfs -ls /user/wterry    (/user/maria  = hdfs location in hadoop)
 
-3.  hdfs fsck /user/maria   (fsck = file system check. To check if the file is healthy and can be transferred to hdfs from local)
+3.  hdfs fsck /user/mwterry   (fsck = file system check. To check if the file is healthy and can be transferred to hdfs from local)
 
 
 
