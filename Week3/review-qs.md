@@ -3,7 +3,7 @@
   - > Cloudera Distribution of Hadoop.  One of the ways Hadoop is used in the wild, two major companies supporting Hadoop clusters were CLoudera and HortonWorks, they merged a year or two ago.
 - What are some differences between hard disk space and RAM?
 - What is a VM? (short)
-- What is Azure Cloud Services? (short)
+- What is AWS? (short)
 - What is/was Unix?  Why is Ubuntu a Unix-like operating system?
 - Know basic file manipulation and navigation commands in Unix:
   - ls -al
