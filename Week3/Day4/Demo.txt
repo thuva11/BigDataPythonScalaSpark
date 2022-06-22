@@ -3,7 +3,7 @@ What is the total number of consumers for Branch1?
 What is the number of consumers for the Branch2?
 
 -------------------------------------------
-sudo nohup $HIVE_HOME/bin/hiveserver2&
+cd $HIVE_HOME
 beeline -u jdbc:hive2://
 
 -------------------------------------------------------------------------------
