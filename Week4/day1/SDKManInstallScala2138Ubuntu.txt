@@ -1,0 +1,13 @@
+sudo apt install zip
+curl -s "https://get.sdkman.io" | bash
+source "/home/wterry/.sdkman/bin/sdkman-init.sh"
+sdk install scala 2.13.8
+
+close terminal
+open new ubuntu terminal
+
+scala -version
+
+
+
+https://askubuntu.com/questions/1170384/not-able-to-install-scala-2-13-using-apt-get
