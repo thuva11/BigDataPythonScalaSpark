@@ -1,0 +1,1 @@
+Odersky, Martin, Lex Spoon, and Bill Venners. Programming in scala. Artima Inc, 2008.
