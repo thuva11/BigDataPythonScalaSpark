@@ -23,7 +23,7 @@ object test1 {
     spark.sql("SELECT _c0 from beverage WHERE _c1='Branch6'").show()
 
     val df3 = spark.read.option("multiline", "true").json("hdfs://localhost:9000/user/will/people.json")
-    df3.createOrReplaceTempView("people")
-    spark.sql("SELECT * from people WHERE _c1=23; ").show()
+    df3.createOrReplaceTempView("people2")
+    spark.sql("SELECT * from people2 where name='Justin'").show()
   }
 }
