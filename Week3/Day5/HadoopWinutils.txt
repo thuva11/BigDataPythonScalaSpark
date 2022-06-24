@@ -1,0 +1,29 @@
+Hadoop Winutils
+
+For Window machine:
+
+If you don’t have Hadoop,
+you need to create Hadoop folder and also create Bin folder in it and then copy and paste winutils.exe file in it.
+
+download winutils file from 
+https://github.com/steveloughran/winutils or better:
+https://github.com/kontext-tech/winutils
+
+and paste into hadoop\bin folder and set environment variable for c:\hadoop\bin;
+
+give the full permission to this folder \tmp\hive like this: 
+
+cd "C:\hadoop\bin"
+then 
+winutils.exe chmod 777 /tmp/hive
+
+
+------------------------------------------------------------
+Also https://docs.microsoft.com/en-us/dotnet/spark/how-to-guides/windows-instructions
+and it leads you to https://github.com/steveloughran/winutils where you can find Hadoop 3.0.0 winutils.exe or Hadoop 2.7.0 winutils.exe
+
+
+https://dzone.com/articles/detailed-guide-setup-apache-spark-development-envi
+
+https://kaizen.itversity.com/setup-development-environment-intellij-and-scala-big-data-hadoop-and-spark/
+
