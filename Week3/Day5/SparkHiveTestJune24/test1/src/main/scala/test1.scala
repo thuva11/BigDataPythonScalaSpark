@@ -5,7 +5,6 @@ object test1 {
   def main(args: Array[String]): Unit = {
     // create a spark session
     // for Windows
-    System.setProperty("hadoop.home.dir", "C:\\hadoop2")
     val spark = SparkSession
       .builder
       .appName("hello hive")
