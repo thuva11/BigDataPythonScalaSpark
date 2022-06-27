@@ -130,7 +130,7 @@ val list = List("Anish is working on BigData Technologies","Hello Anish","BigDat
 val words = list.flatMap(line => line.split(" "))
 val keyData = words.map(word => (word,1))
 val groupedData = keyData.groupBy(_._1)
-val result = groupedData.view.mapValues(list=>{list.map(_._2).sum})
+val result = groupedData.mapValues(list=>{list.map(_._2).sum})
 result.foreach(println)
 
 Final Result:
