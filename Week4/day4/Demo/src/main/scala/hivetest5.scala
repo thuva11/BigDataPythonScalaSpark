@@ -28,14 +28,18 @@ object hivetest5 {
     val user = "root"
     val pass = "p4ssword"
 
-    val sourceDf=spark.read.format("jdbc").option("url",url).option("dbtable","users").option("user",user).option("password",pass).load()
+    val sourceDf=spark.read.format("jdbc").option("url",url)
+      .option("dbtable","users").option("user",user)
+      .option("password",pass).load()
     sourceDf.show()
 
     sourceDf.createOrReplaceTempView("users1")
     spark.sql("SELECT * FROM users1 where user_id=1").show()
 
     val sql="select * from users"
-    val sourceDf2=spark.read.format("jdbc").option("url",url).option("dbtable",s"( $sql ) as t").option("user",user).option("password",pass).load()
+    val sourceDf2=spark.read.format("jdbc").option("url",url)
+      .option("dbtable",s"( $sql ) as t").option("user",user)
+      .option("password",pass).load()
     sourceDf2.show()
 
     sourceDf2.createOrReplaceTempView("users2")

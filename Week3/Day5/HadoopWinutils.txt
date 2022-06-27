@@ -11,6 +11,8 @@ https://github.com/kontext-tech/winutils
 
 and paste into hadoop\bin folder and set environment variable for c:\hadoop\bin;
 
+create folder c:\tmp\hive
+
 give the full permission to this folder \tmp\hive like this: 
 
 cd "C:\hadoop\bin"
