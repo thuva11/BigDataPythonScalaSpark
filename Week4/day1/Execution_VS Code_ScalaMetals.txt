@@ -138,6 +138,7 @@ val result = groupedData.mapValues(list=>{list.map(_._2).sum})
 val list = List("Anish is working on BigData Technologies","Hello Anish","BigData")
 val words = list.flatMap(line => line.split(" "))
 val keyData = words.map(word => (word,1))
+val groupedData = keyData.groupBy(_._1)
 val counts = groupedData.map(x=>x._2).map(x=>x.map(y=>y._2)).map(x=>x.sum)
 val output = groupedData.map(x=>x._2).map(x=>x.map(y=>y._2)).map(x=>x.sum).zip(groupedData.map(x=>x._1))
 
