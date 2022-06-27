@@ -142,6 +142,13 @@ val groupedData = keyData.groupBy(_._1)
 val counts = groupedData.map(x=>x._2).map(x=>x.map(y=>y._2)).map(x=>x.sum)
 val output = groupedData.map(x=>x._2).map(x=>x.map(y=>y._2)).map(x=>x.sum).zip(groupedData.map(x=>x._1))
 
+//or even better
+val list = List("Anish is working on BigData Technologies","Hello Anish","BigData")
+val words = list.flatMap(line => line.split(" "))
+val keyData = words.map(word => (word,1))
+val groupedData = keyData.groupBy(_._1)
+val output = groupedData.map(x=>x._2).map(x=>{x.reduce((x,y)=>(x._1,x._2+y._2))})
+
 output.foreach(println)
 
 result.foreach(println)

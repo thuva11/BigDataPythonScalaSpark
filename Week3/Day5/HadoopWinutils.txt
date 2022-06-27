@@ -19,6 +19,11 @@ cd "C:\hadoop\bin"
 then 
 winutils.exe chmod 777 /tmp/hive
 
+may need:
+
+copy hadoop.dll from "C:\hadoop\bin" and
+paste hadoop.dll into C:/Windows/System32
+
 
 ------------------------------------------------------------
 Also https://docs.microsoft.com/en-us/dotnet/spark/how-to-guides/windows-instructions
@@ -28,4 +33,7 @@ and it leads you to https://github.com/steveloughran/winutils where you can find
 https://dzone.com/articles/detailed-guide-setup-apache-spark-development-envi
 
 https://kaizen.itversity.com/setup-development-environment-intellij-and-scala-big-data-hadoop-and-spark/
+
+
+https://stackoverflow.com/questions/41851066/exception-in-thread-main-java-lang-unsatisfiedlinkerror-org-apache-hadoop-io
 
