@@ -1,0 +1,147 @@
+ // Install MongoDB Community Server
+https://www.mongodb.com/try/download/community
+
+----------------------------------------
+// Run MongoDB Server as Windows Server
+----------------------------------------
+// Open Task Manager > Services
+// Check for service name = MongoDB; and Status = Running
+// Copy the below path where mongo.exe file is present
+C:\Program Files\MongoDB\Server\5.0\bin
+// Open Command Prompt
+// Cd C:\Program Files\MongoDB\Server\5.0\bin
+// to connect to mongodb server on local host, enter below
+C:\Program Files\MongoDB\Server\5.0\bin>mongo
+// MongoDb shell version can be seen
+MongoDB shell version v5.0.3
+
+(or run Powershell as admin cd as above and type ./mongo)
+
+//Then enter below to show the databases
+show databases
+
+Result:
+admin   0.000GB
+config  0.000GB
+local   0.000GB
+
+
+// Stop MongoDB from task Manager
+
+Result: Status = Stopped
+
+// Ctrl D in the cmd prompt
+
+Result = Bye
+C:\Program Files\MongoDB\Server\5.0\bin>
+
+// Enter mongo
+C:\Program Files\MongoDB\Server\5.0\bin>mongo
+
+Result:
+Error: couldn't connect to server 127.0.0.1:27017
+
+// Start MongoDB service in the task manager
+
+//then, right click on 'MongoDB' service and select 'Go to details'
+// Details tab with mongod.exe will be highlighted in the task manager
+// Right click 'mongod.exe' and click on 'Go to service(s)'
+// MongoDB service will be highlighted
+// Right Click ' MongoDB' and click on 'Open services' 
+// Search for 'MongoDB Server (MongoDB)'
+// Right Click on 'MongoDB Server (MongoDB)' and click on 'Properties'
+// Verify the 'Path to executables'
+
+Result:
+"C:\Program Files\MongoDB\Server\5.0\bin\mongod.exe" --config "C:\Program Files\MongoDB\Server\5.0\bin\mongod.cfg" --service
+
+
+// Close the Task Manger popup windows
+
+// In the cmd prompt enter below
+C:\Program Files\MongoDB\Server\5.0\bin>mongo --host localhost --port 27017
+
+Result:
+connecting to: mongodb://localhost:27017/?compressors=disabled&gssapiServiceName=mongodb
+
+//Then enter below
+show databases
+
+Result:
+admin   0.000GB
+config  0.000GB
+local   0.000GB
+
+
+// the exit
+exit
+
+Result:
+bye
+C:\Program Files\MongoDB\Server\5.0\bin>
+
+
+----------------------------------------
+// Run MongoDB Server from Command Line:
+----------------------------------------
+
+// type belwo: assuming current status of MongoDB = Stopped in task Manager
+C:\Program Files\MongoDB\Server\5.0\bin>mongod
+
+Result:
+NonExistentPath: Data directory C:\\data\\db\\ not found.
+
+// Create a folder 'data' in C drive
+// Create a folder 'db' inside 'data' folder
+
+Result:
+C:\data\db
+
+// type mongod in cmd prompt
+C:\Program Files\MongoDB\Server\5.0\bin>mongod
+
+Result: Now server is up and running
+ "ctx":"listener","msg":"Listening on","attr":{"address":"127.0.0.1"}}
+
+ "ctx":"listener","msg":"Waiting for connections",
+
+// Open another cmd prompt
+// Cd C:\Program Files\MongoDB\Server\5.0\bin
+// type mongo
+C:\Program Files\MongoDB\Server\5.0\bin>mongo
+
+Result:
+connecting to: mongodb://127.0.0.1:27017/
+
+//Then enter below
+show databases
+
+Result:
+admin   0.000GB
+config  0.000GB
+local   0.000GB
+
+
+
+-----------------------------------------
+Also install MongoDB Shell, mongosh:
+https://docs.mongodb.com/mongodb-shell/install/
+--------------------------------------
+
+-------------------------------------------
+// Connecting MongoDB Compass to Localhost:
+-------------------------------------------
+// https://www.bmc.com/blogs/mongodb-compass/
+
+// Compass Demo - MongoDB Developer Tools
+https://www.youtube.com/watch?v=YxZpf5FqZjk
+
+
+-----------------------------------------------
+Reference Links:
+1. https://www.youtube.com/watch?v=85A6m1soKww
+2. https://www.youtube.com/watch?v=FwMwO8pXfq0
+3. https://www.youtube.com/watch?v=TD3NlnpIOhY
+4. https://www.bmc.com/blogs/mongodb-overview-getting-started-with-mongodb/
+5. https://www.c-sharpcorner.com/article/how-to-set-up-and-starts-with-mongodb/
+--------------------------------------------
