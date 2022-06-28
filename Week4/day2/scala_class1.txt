@@ -23,7 +23,7 @@ println(f.size)
 
 2)Structure of classes
 
- The auxiliary constructor in Scala is used for constructor overloading and defined as a method using this  name.
+ The auxiliary constructor in Scala is used for constructor overloading and defined as a method using this name.
 
 class Employee(empId: Int,name: String,salary :Double){
  def this(empId:Int,name:String) =
@@ -265,6 +265,7 @@ def failingFn2(i: Int): Int = {
   catch { case e: Exception => 43 }
 }
 
+failingFn(10)
 failingFn2(12)
 
 
@@ -293,7 +294,7 @@ object Curry{
     // Main method
     def main(args: Array[String]):Unit=
     {
-        println(add2(20,19));
+        println(add2(20)(19));
     }
 }
 
