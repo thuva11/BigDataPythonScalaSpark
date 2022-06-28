@@ -1,0 +1,35 @@
+in ubuntu (also first 
+
+sudo apt update
+then
+sudo apt upgrade
+
+finally if not done yet
+sudu apt install python-is-python3)
+-------------------------------------------------------------------
+pip install jupyter notebook
+
+add to (in .bashrc) path:
+
+~/.local/bin
+
+(run with below in ubuntu)
+jupyter notebook
+---------------------------------------------------------------------------------
+if error about markupsafe:
+https://www.datasciencelearner.com/importerror-cannot-import-name-soft-unicode-from-markupsafe-solved
+
+pip install MarkupSafe
+
+pip install markupsafe==2.0.1
+
+-------------------------------------------------------
+for scala in Jupyter Notebook
+
+https://www.geeksforgeeks.org/how-to-install-scala-kernal-in-jupyter/
+
+pip install spylon-kernel
+
+python -m spylon_kernel install --user
+
+jupyter notebook
