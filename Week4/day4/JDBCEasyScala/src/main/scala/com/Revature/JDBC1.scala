@@ -20,7 +20,7 @@ object JDBC1 {
 
 
 
-    while ( resultSet.next() ) {
+    while (resultSet.next() ) {
       println(resultSet.getString(1)+", " +resultSet.getString(2) +", " +resultSet.getString(3))
     }
 
