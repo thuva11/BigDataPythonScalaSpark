@@ -3,7 +3,7 @@ Hadoop Winutils
 For Window machine:
 
 If you don’t have Hadoop,
-you need to create Hadoop folder and also create Bin folder in it and then copy and paste winutils.exe file in it.
+you need to create Hadoop folder and copy bin folder for Hadoop-3.3.0/bin below from https://github.com/kontext-tech/winutils
 
 download winutils file from 
 https://github.com/steveloughran/winutils or better:
@@ -22,7 +22,7 @@ winutils.exe chmod 777 /tmp/hive
 may need:
 
 copy hadoop.dll from "C:\hadoop\bin" and
-paste hadoop.dll into C:/Windows/System32
+paste hadoop.dll into "C:\Windows\System32"
 
 
 ------------------------------------------------------------
