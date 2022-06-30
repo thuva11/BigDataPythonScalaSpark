@@ -17,6 +17,7 @@ object test1 {
     df1.createOrReplaceTempView("people")
     spark.sql("SELECT * from people WHERE _c1=23; ").show()
 
+
     val df2 = spark.read.format("csv").option("sep",",").load("hdfs://localhost:9000/user/hive/warehouse/beva/Bev_BranchA.txt")
     df2.createOrReplaceTempView("beverage")
     spark.sql("SELECT * FROM beverage;").show()

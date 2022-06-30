@@ -8,7 +8,7 @@ object hivetest5 {
   def main(args: Array[String]): Unit = {
     // create a spark session
     // for Windows
-    System.setProperty("hadoop.home.dir", "C:\\Hadoop3")
+    //System.setProperty("hadoop.home.dir", "C:\\Hadoop3")
     val spark = SparkSession
       .builder
       .appName("hello hive")
@@ -36,7 +36,7 @@ object hivetest5 {
     sourceDf.createOrReplaceTempView("users1")
     spark.sql("SELECT * FROM users1 where user_id=1").show()
 
-    val sql="select * from users"
+    val sql="select * from users where user_id=2"
     val sourceDf2=spark.read.format("jdbc").option("url",url)
       .option("dbtable",s"( $sql ) as t").option("user",user)
       .option("password",pass).load()
@@ -44,6 +44,11 @@ object hivetest5 {
 
     sourceDf2.createOrReplaceTempView("users2")
     spark.sql("SELECT * FROM users2 where user_id=2").show()
+
+    var sourceDf3=spark.sql("SELECT * FROM users2 where user_id=2")
+    sourceDf3.distinct().count()
+    sourceDf3.createOrReplaceTempView(viewName="anotherview")
+    spark.sql("SELECT * FROM anotherview").show()
 
     spark.close()
   }

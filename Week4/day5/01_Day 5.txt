@@ -34,18 +34,6 @@ object Addition extends App {
 }
 
 
-// use for construct to extract values when futures complete
-val b1 = futureInt
-val b2 = futureInt
-for (i1 <‑ b1; i2 <‑ b2) yield println("Sum of values is " + (i1 + i2))
-Thread sleep 3000
-
-// wait directly for completion of futures
-val c1 = futureInt
-val c2 = futureInt
-println("Sum of values is " + (Await.result(c1, Duration.Inf) +
-  Await.result(c2, Duration.Inf)))
-
 import scala.concurrent.duration.Duration
 import scala.concurrent.{Await, Future}
 import scala.concurrent.ExecutionContext.Implicits.global
