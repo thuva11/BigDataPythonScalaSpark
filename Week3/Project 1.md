@@ -31,10 +31,10 @@
 - Hadoop MapReduce (optional)
 - YARN 
 - HDFS
-- Scala 2.12 
+- Scala 2.12 (or 2.13)
 - Hive
 - Spark SQL
 - Git + GitHub
 
 ### Due Date
-- Presentations will take place on Friday, 7/8.
+- Presentations will take place on Monday, 7/11.
