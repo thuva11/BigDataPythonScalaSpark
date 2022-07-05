@@ -35,6 +35,8 @@ https://sparkbyexamples.com/apache-hive/hive-load-csv-file-into-table/
 
 https://cwiki.apache.org/confluence/display/Hive/Managed+vs.+External+Tables
 
+https://cwiki.apache.org/confluence/display/Hive/
+
 https://hive.apache.org/
 
 https://spark.apache.org/docs/latest/sql-ref-syntax-ddl-create-table-hiveformat.html

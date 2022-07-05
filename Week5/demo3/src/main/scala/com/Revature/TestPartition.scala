@@ -8,7 +8,7 @@ object TestPartition {
     // create a spark session
     // for Windows
     //System.setProperty("hadoop.home.dir", "C:\\winutils")
-    System.setProperty("hadoop.home.dir", "C:\\hadoop")
+    System.setProperty("hadoop.home.dir", "C:\\Hadoop3")
     val spark = SparkSession
       .builder
       .appName("hello hive")
