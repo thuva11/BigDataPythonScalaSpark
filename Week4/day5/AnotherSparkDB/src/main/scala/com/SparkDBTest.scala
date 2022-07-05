@@ -8,14 +8,10 @@ import java.time.format.DateTimeFormatter
 
 object SparkDBTest {
   def main(args: Array[String]): Unit = {
-    // create a spark session
-    // for Windows
-    //System.setProperty("hadoop.home.dir", "C:\\Hadoop3")
     val spark = SparkSession
       .builder
       .appName("hello hive")
       .config("spark.master", "local[*]")
-      //.config("spark.driver.allowMultipleContexts","true")
       .enableHiveSupport()
       .getOrCreate()
     Logger.getLogger("org").setLevel(Level.ERROR)
@@ -35,7 +31,6 @@ object SparkDBTest {
     sourceDf.show()
 
     import spark.implicits._
-
     //val df4 = Seq((13, "start", "2001-03-09")).toDF("user_id", "action", "date")
     val df4 = Seq((13, "start", x)).toDF("user_id", "action", "date")
     df4.show()
@@ -92,3 +87,5 @@ VALUES (1,'start','2000/01/01'),
 (4,'start','2000/01/07');
 DROP TABLE IF EXISTS users2;
 */
+
+//https://spark.apache.org/docs/latest/api/java/org/apache/spark/sql/DataFrameWriter.html

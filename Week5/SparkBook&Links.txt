@@ -27,10 +27,14 @@ https://sparkbyexamples.com/
 //accumulators
 https://sparkbyexamples.com/spark/spark-accumulators/
 
-//Spark Types ofr StuctFields
+//Spark Types of StructFields
 https://spark.apache.org/docs/latest/sql-ref-datatypes.html
 
 //for loading tables in hive 
 https://sparkbyexamples.com/apache-hive/hive-load-csv-file-into-table/
+
+https://cwiki.apache.org/confluence/display/Hive/Managed+vs.+External+Tables
+
+https://hive.apache.org/
 
 https://spark.apache.org/docs/latest/sql-ref-syntax-ddl-create-table-hiveformat.html

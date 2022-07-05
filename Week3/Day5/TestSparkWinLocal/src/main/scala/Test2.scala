@@ -53,35 +53,35 @@ object Test2 {
     spark.sql("LOAD DATA LOCAL INPATH 'Bev_ConscountC.txt' INTO TABLE ConsC")
     spark.sql("SELECT * FROM ConsC").show()
 
-    spark.sql(sqlText="DROP TABLE IF EXISTS ConsAll")
+    spark.sql("DROP TABLE IF EXISTS ConsAll")
     spark.sql("create table IF NOT EXISTS ConsAll(Beverage STRING, Consumed INT)")
-    spark.sql(sqlText="INSERT INTO TABLE ConsAll (SELECT * FROM ConsA UNION ALL SELECT * FROM ConsB UNION ALL SELECT * FROM ConsC)")
+    spark.sql("INSERT INTO TABLE ConsAll (SELECT * FROM ConsA UNION ALL SELECT * FROM ConsB UNION ALL SELECT * FROM ConsC)")
     //spark.sql("SELECT * FROM ConsAll").show()
 
     //Problem 1
     //What is the total number of consumers for Branch1?
     //What is the total number of consumers for the Branch2?
     println("Problem 1 What is the total number of consumers for Branch1? What is the number of consumers for the Branch2? ")
-    spark.sql(sqlText="DROP TABLE IF EXISTS TotalCons")
-    spark.sql(sqlText="CREATE TABLE IF NOT EXISTS TotalCons(BranchID STRING, TotalConsumers INT) row format delimited fields terminated by ','")
-    spark.sql(sqlText="INSERT INTO TABLE TotalCons(SELECT BranchID, sum(ConsAll.Consumed) FROM BevAll join ConsAll On (ConsAll.Beverage=BevAll.Beverage) GROUP BY BevAll.BranchID ORDER BY BevAll.BranchID)")
+    spark.sql("DROP TABLE IF EXISTS TotalCons")
+    spark.sql("CREATE TABLE IF NOT EXISTS TotalCons(BranchID STRING, TotalConsumers INT) row format delimited fields terminated by ','")
+    spark.sql("INSERT INTO TABLE TotalCons(SELECT BranchID, sum(ConsAll.Consumed) FROM BevAll join ConsAll On (ConsAll.Beverage=BevAll.Beverage) GROUP BY BevAll.BranchID ORDER BY BevAll.BranchID)")
     //Problem 1
     spark.sql("SELECT * FROM TotalCons").show()
 
     //Problem 2
     //--What is the most consumed beverage on Branch1
     println("Problem 2 What is the most consumed beverage on Branch1")
-    spark.sql(sqlText="SELECT BranchID, sum(ConsAll.Consumed),BevAll.Beverage FROM BevAll join ConsAll On (ConsAll.Beverage=BevAll.Beverage) WHERE BranchID='Branch1' GROUP BY BevAll.BranchID,BevAll.Beverage ORDER BY sum(ConsAll.Consumed) DESC").show()
+    spark.sql("SELECT BranchID, sum(ConsAll.Consumed),BevAll.Beverage FROM BevAll join ConsAll On (ConsAll.Beverage=BevAll.Beverage) WHERE BranchID='Branch1' GROUP BY BevAll.BranchID,BevAll.Beverage ORDER BY sum(ConsAll.Consumed) DESC").show()
     //--What is the least consumed beverage on Branch2
     //--What is the Average (median) consumed beverage of Branch2
     //spark.sql(sqlText="SELECT BranchID, ROW_NUMBER() OVER (ORDER BY sum(ConsAll.Consumed)) AS row_num,sum(ConsAll.Consumed),BevAll.Beverage FROM BevAll join ConsAll On (ConsAll.Beverage=BevAll.Beverage) WHERE BranchID='Branch2' GROUP BY BevAll.BranchID,BevAll.Beverage ORDER BY sum(ConsAll.Consumed) DESC")
     println("Problem 2 What is the least consumed beverage on Branch2")
-    spark.sql(sqlText="SELECT BranchID,sum(ConsAll.Consumed), BevAll.Beverage FROM BevAll join ConsAll On (ConsAll.Beverage=BevAll.Beverage) WHERE BranchID='Branch2' GROUP BY BevAll.BranchID,BevAll.Beverage ORDER BY sum(ConsAll.Consumed) DESC").show(100)
+    spark.sql("SELECT BranchID,sum(ConsAll.Consumed), BevAll.Beverage FROM BevAll join ConsAll On (ConsAll.Beverage=BevAll.Beverage) WHERE BranchID='Branch2' GROUP BY BevAll.BranchID,BevAll.Beverage ORDER BY sum(ConsAll.Consumed) DESC").show(100)
     println("least consumed")
-    spark.sql(sqlText="SELECT BranchID,sum(ConsAll.Consumed), BevAll.Beverage FROM BevAll join ConsAll On (ConsAll.Beverage=BevAll.Beverage) WHERE BranchID='Branch2' GROUP BY BevAll.BranchID,BevAll.Beverage ORDER BY sum(ConsAll.Consumed) ASC LIMIT 1").show()
+    spark.sql("SELECT BranchID,sum(ConsAll.Consumed), BevAll.Beverage FROM BevAll join ConsAll On (ConsAll.Beverage=BevAll.Beverage) WHERE BranchID='Branch2' GROUP BY BevAll.BranchID,BevAll.Beverage ORDER BY sum(ConsAll.Consumed) ASC LIMIT 1").show()
     //median shop above is number 26 or Small Latte with 93184
     println("average (median) consumed")
-    spark.sql(sqlText="SELECT BranchID,sum(ConsAll.Consumed), BevAll.Beverage FROM BevAll join ConsAll On (ConsAll.Beverage=BevAll.Beverage) WHERE BranchID='Branch2' AND BevAll.Beverage='SMALL_LATTE' GROUP BY BevAll.BranchID,BevAll.Beverage  ORDER BY sum(ConsAll.Consumed) DESC").show()
+    spark.sql("SELECT BranchID,sum(ConsAll.Consumed), BevAll.Beverage FROM BevAll join ConsAll On (ConsAll.Beverage=BevAll.Beverage) WHERE BranchID='Branch2' AND BevAll.Beverage='SMALL_LATTE' GROUP BY BevAll.BranchID,BevAll.Beverage  ORDER BY sum(ConsAll.Consumed) DESC").show()
 
     spark.close()
   }
