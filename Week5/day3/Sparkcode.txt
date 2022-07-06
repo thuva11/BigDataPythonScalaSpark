@@ -30,8 +30,8 @@ k.toDebugString
 
 7)
 val textFile = sc.textFile("/user/will/people.txt")
-textFile.map(line => line.split(" ")).collect()
-textFile.flatMap(line => line.split(" ")).collect()
+textFile.map(line => line.split("\t")).collect()
+textFile.flatMap(line => line.split("\t")).collect()
 
 Action
 1) val a = sc.parallelize(1 to 10)
