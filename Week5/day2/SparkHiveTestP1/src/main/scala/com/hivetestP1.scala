@@ -113,19 +113,11 @@ object hivetestP1{
     //Problem 6
     println("Problem 6")
     spark.sql("DROP TABLE IF EXISTS Tab62");
-    spark.sql("CREATE TABLE Tab62(BranchID STRING, TotalConsumers INT) STORED AS ORC")
+    spark.sql("CREATE TABLE Tab62(BranchID STRING, TotalConsumers INT) STORED AS ORC ")
     spark.sql("INSERT INTO TABLE Tab62(SELECT * FROM TotalCons)")
     spark.sql("SELECT * FROM Tab62 ").show()
     spark.sql("SELECT * FROM Tab62 WHERE BRANCHID !='Branch2' ").show()
 
-    //spark.sql(sqlText="SET hive.support.concurrency=true")
-    //spark.sql(sqlText="SET hive.txn.manager=org.apache.hadoop.hive.ql.lockmgr.DbTxnManager")
-    //spark.sql(sqlText="ALTER TABLE Tab62 SET TBLPROPERTIES ('transactional'='true')")
-    //spark.sql(sqlText="Show tblproperties Tab62").show()
-    //spark.sql(sqlText="DELETE FROM Tab62 WHERE Tab62.BranchID='Branch2' ")
-
-
-    //spark.sql(sqlText="SELECT * FROM Tab62").show()
-  }
+   }
 }
 
