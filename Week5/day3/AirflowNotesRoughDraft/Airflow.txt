@@ -1,0 +1,118 @@
+https://towardsdatascience.com/a-complete-introduction-to-apache-airflow-b7e238a33df
+
+
+http://localhost:8081/home
+
+export AIRFLOW_HOME=~/AirFlowTest/airflow
+
+ps aux to see process and then kill
+1. cd ~
+
+2. mkdir AirFlowTest
+
+3. cd ~/AirFlowTest
+
+4. python3 -m venv .
+
+5. source ~/AirFlowTest/bin/activate
+
+export AIRFLOW_HOME=~/AirFlowTest/airflow
+
+6. pip3 install apache-airflow
+
+8. airflow db init
+
+10. open new terminal window and run
+
+11. cd ~/AirFlowTest
+12. source ~/AirFlowTest/bin/activate
+
+airflow webserver -p 8081 
+? -D
+13. airflow scheduler
+
+14. open new terminal window and run
+	cd ~/AirFlowTest
+	source ~/AirFlowTest/bin/activate
+
+15. airflow users  create --role Admin --username admin --email admin --firstname admin --lastname admin --password admin
+
+
+now user is admin
+and password is admin
+
+
+mkdir -p ~/AirFlowTest/airflow/dags
+
+16. airflow tasks list -t tutorial
+
+17. http://localhost:8081/home
+cd AirFlowTest/airflow
+vim airflow.cfg
+
+dags_folder=$AIRFLOW_HOME/airflow/dags
+
+https://medium.com/@pennyqxr/build-your-first-end-2-end-dag-in-airflow-locally-d4d9dba2d542
+
+18. cd ~/AirFlowTest/lib/python3.10/site-packages/airflow/example_dags
+
+19. cp tutorial.py ./tutorial2.py
+
+example_python_operator
+
+20. cd ~/AirFlowTest
+pip3 install virtualenv (for the exampe_python_operator)
+
+
+try at begginning
+export AIRFLOW_HOME=~/AirFlowTest/airflow
+
+https://airflow.apache.org/docs/apache-airflow/2.0.0/start.html
+
+https://airflow.apache.org/docs/apache-airflow/1.10.12/howto/write-logs.html
+
+for scala youtube video Run Spark Scaa Job Using Airflow Part 5 DM DataMaking
+https://www.google.com/search?q=how+run+scala+job+with+python+airflow&oq=how+run+scala+job+with+python+airflow&aqs=chrome..69i57j33i160.5992j0j15&sourceid=chrome&ie=UTF-8#kpvalbx=_gYGOYufhLtikptQPpu6emAw16
+
+??7. echo "AIRFLOW_HOME=${PWD}/airflow" >> .env dont' need
+
+??9. mkdir -p ${AIRFLOW_HOME}/dags/
+
+------------------------------------------------
+https://forum.astronomer.io/t/dag-still-loading-load-examples-and-dag-not-updated-and-why-airflow-db-init-reset-using-sqlite/1071
+load_examples = False but after
+
+airflow db reset
+airflow db init
+
+pkill -9 “airflow webserver”
+pkill -9 “gunicron”
+pkill -9 “airflow scheduler”
+
+Still loads all examples, i.e new user defined DAGS not picked either
+
+executor = CeleryExecutor
+sql_alchemy_conn = postgresql+psycopg2://airflow:airflow@127.0.0.1:5432/airflow
+
+celery_result_backend = db+postgresql://airflow:airflow@localhost:5432/airflow
+
+This is still showing SQLIite?
+WARNING - Because we cannot use more than 1 thread (parsing_processes = 2 ) when using sqlite. So we set parallelism to 1.
+
+airflow db reset
+DB: sqlite:////$HOME/airflow/airflow.db
+
+similarly:
+airflow db init
+DB: sqlite:////$HOME/airflow/airflow.db
+[2021-03-05 16:15:45,640] {db.py:674} INFO - Creating tables
+INFO [alembic.runtime.migration] Context impl SQLiteImpl.
+
+
+
+-
+INFO [alembic.runtime.migration] Will assume non-transactional DDL.
+
+---------------------------------------------------------------
+https://stackoverflow.com/questions/41730297/python-script-scheduling-in-airflow
+https://stackoverflow.com/questions/68710189/how-to-run-scala-code-in-airflow-using-scala-operator

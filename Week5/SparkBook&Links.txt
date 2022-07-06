@@ -37,6 +37,8 @@ https://cwiki.apache.org/confluence/display/Hive/Managed+vs.+External+Tables
 
 https://cwiki.apache.org/confluence/display/Hive/
 
+https://www.tutorialspoint.com/hive/hiveql_joins.htm
+
 https://hive.apache.org/
 
 https://spark.apache.org/docs/latest/sql-ref-syntax-ddl-create-table-hiveformat.html

@@ -1,0 +1,18 @@
+https://towardsdatascience.com/a-complete-introduction-to-apache-airflow-b7e238a33df
+
+
+http://localhost:8081/home
+
+
+airflow users  create --role Admin --username admin --email admin --firstname admin --lastname admin --password admin
+
+
+now user is admin
+and password is admin
+
+
+airflow tasks list -t tutorial
+
+
+for hello world 
+https://insaid.medium.com/hello-world-using-apache-airflow-91859e3bbfd5

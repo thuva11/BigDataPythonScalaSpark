@@ -72,7 +72,6 @@ b.persist(DISK_ONLY)
 b.unpersist()
 b.persist(MEMORY_ONLY) 
 
-Look at your existing  partitions command
 
 
 

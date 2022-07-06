@@ -21,13 +21,13 @@ describe Drivers1Test;
 
 LOAD DATA INPATH '/user/hive/warehouse/Drivers.csv' OVERWRITE INTO TABLE Drivers1Test;
 
-create external table data2(txno INT,txnlocation STRING,custno INT,amount STRING,category STRING,Time_01 STRING)row format delimited fields terminated by ',' LOCATION '/user/external';
+create external table data3(txno INT,txnlocation STRING,custno INT,amount STRING,category STRING,Time_01 STRING)row format delimited fields terminated by ',' LOCATION '/user/external2';
 
-from new_data1 dat insert overwrite table data2 select dat.txno,dat.txnlocation,dat.custno,dat.amount,dat.category,dat.Time_01;
+from VeryNewTable dat insert overwrite table data3 select dat.txno,dat.txnlocation,dat.custno,dat.amount,dat.category,dat.Time_01;
 
-select * from data2;
+select * from data3;
 
-Create VIEW Sample_View AS SELECT * FROM data2 WHERE data2.amount>200000;
+Create VIEW Sample_View AS SELECT * FROM data3 WHERE data3.amount>200000;
 
 DROP VIEW Sample_View;
 

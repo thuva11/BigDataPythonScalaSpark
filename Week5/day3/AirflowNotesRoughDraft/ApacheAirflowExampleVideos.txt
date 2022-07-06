@@ -1,0 +1,12 @@
+https://www.youtube.com/watch?v=WuDmZQeKE5c
+Apache Airflow hands on part 1
+
+https://www.youtube.com/watch?v=Q4kKShL2muA
+Apache Airflow hands on part 2
+
+https://www.youtube.com/watch?v=i6FFOq9qPN4
+Apache Airflow hands on Part 3 | How to use Python Operator
+
+
+https://www.youtube.com/watch?v=lWkJ-03k6NM
+Apache Airflow hands on part 4 | MySQL Operator | Creating a table in Mysql using Apache Airflow
