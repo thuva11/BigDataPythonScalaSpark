@@ -79,4 +79,8 @@ peopleDF.createOrReplaceTempView("people")
 val results = spark.sql("SELECT name FROM people")
 results.show()
 
+//good question Oscar:
+results.write.option("path","hdfs:///user/hive/warehouse/test").saveAsTable("PeopleTable10")
+spark.sql("SELECT * FROM PeopleTable10")
+
 
