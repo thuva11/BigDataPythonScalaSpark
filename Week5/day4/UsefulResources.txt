@@ -1,0 +1,6 @@
+Ross, Margy, and Ralph Kimball. The data warehouse toolkit: the definitive guide to dimensional modeling. John Wiley & Sons, 2013.
+
+
+https://towardsdatascience.com/star-schema-924b995a9bdf
+
+https://www.zentut.com/data-warehouse/fact-table/
