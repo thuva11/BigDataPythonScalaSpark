@@ -4,3 +4,11 @@ Ross, Margy, and Ralph Kimball. The data warehouse toolkit: the definitive guide
 https://towardsdatascience.com/star-schema-924b995a9bdf
 
 https://www.zentut.com/data-warehouse/fact-table/
+
+
+https://www.stitchdata.com/resources/oltp-vs-olap
+
+https://www.sqlshack.com/things-you-should-avoid-when-designing-a-data-warehouse/
+
+
+https://www.guru99.com/data-warehousing.html
