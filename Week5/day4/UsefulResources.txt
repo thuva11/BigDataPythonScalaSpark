@@ -12,3 +12,7 @@ https://www.sqlshack.com/things-you-should-avoid-when-designing-a-data-warehouse
 
 
 https://www.guru99.com/data-warehousing.html
+
+
+//for types of SCD with datewarehousing review:
+https://www.sqlshack.com/implementing-slowly-changing-dimensions-scds-in-data-warehouses/
