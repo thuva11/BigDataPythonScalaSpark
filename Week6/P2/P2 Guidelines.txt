@@ -1,0 +1,40 @@
+This is a template, to be filled out by each group and placed in their git repo titled README.md
+Requirements:
+- Create a Spark Application that processes COVID data
+- Your project 2 pitch should involve some analysis of COVID data. This is the central feature. 
+- Send me a link to a git repo, have someone in the group manage git 
+- Produce one or more .jar files for your analysis. Then you can run application using spark-submit.
+- 10 queries per group
+- find a trend
+- implement logging (with Spark)
+- use Zeppelin (or Tableu or other visualization software for graphics and visuals) for showing trends and data analysis
+- Implement Agile Scrum methodology for project work (choose Scrum Master who will serve as team lead, all communication with me funneled through this associate, and have daily scrum meetings, by end of day report blockers)
+
+### Presentations
+- Bring a simple slide deck providing an overview of your results. You should present your results, a high level overview of the process used to achieve those results, and any assumptions and simplifications you made on the way to those results.
+- I may ask you to run an analysis on the day of the presentation, so be prepared to do so.
+- We'll have 20 minutes per group, so make sure your presentation can be covered in that time, focusing on the parts of your analysis you find most interesting.
+- Include a link to your github repository at the end of your slides
+
+
+### Technologies
+
+- Apache Spark
+- Spark SQL
+- YARN
+- HDFS and/or S3
+- SBT
+- Scala 2.12 (or 2.13)
+- Git + GitHub
+- Zeppelin (or Tableau or other visualization software)
+
+
+### Due Date
+- Presentations will take place on Tuesday, 7/26
+- Send Project proposal with MVP clearly labeled with 2-3 stretch goals by end of day, 7/14
+
+
+Data given with project is historical data from kaggle, can use other datasets if desired. I recommend
+https://health.google.com/covid-19/open-data/raw-data for more data.
+
+Be sure to perform ETL operations, cleaning, filtering, and loading data where it can be best accessed on HDFS and/or in a MySQL Database.
