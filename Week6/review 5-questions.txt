@@ -9,7 +9,7 @@
 - S3?
 - EMR?
 - What does it mean to run an EMR Step Execution?
-- What are some benefits to using the cloud?
+- What does it mean to run an EMR Step Execution?
 - What is the Spark History Server?
 - What does it mean to “spill to disk” when executing spark tasks?
 - When during a Job do we need to pay attention to the number of partitions and adjust if necessary?
