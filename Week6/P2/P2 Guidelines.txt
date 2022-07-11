@@ -16,7 +16,6 @@ Requirements:
 - We'll have 20 minutes per group, so make sure your presentation can be covered in that time, focusing on the parts of your analysis you find most interesting.
 - Include a link to your github repository at the end of your slides
 
-
 ### Technologies
 
 - Apache Spark
