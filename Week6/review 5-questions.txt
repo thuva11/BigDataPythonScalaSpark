@@ -23,3 +23,6 @@
 - What is the storage level for .cache()?
 -Different ways to repartition?
 -How to check the storagelevel
+
+- What is ETL?
+- What is Audit, Balance and control?
