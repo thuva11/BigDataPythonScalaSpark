@@ -31,7 +31,7 @@ How many users have rated each movie?
 What is the total rating for each movie?
 What is the average rating for each movie?
 ----------------------------------------------------------------------------------------------------------------------
-Spark DataFrames(Quaries) 
+Spark DataFrames(Queries) 
 ---------------------
 Prepare Movies data: Extracting the Year and Genre from the Text
 Prepare Users data: Loading a double delimited csv file

@@ -150,9 +150,9 @@ result.show()
 
 val empdf1 = spark.read.option("multiline", "true").json("/user/will/people.json")
 
-empdf1.write.parquet("/user/will/employee_101235.parquet")
+empdf1.write.parquet("/user/will/employeeParq")
 
-val parquetfiledf = spark.read.parquet("/user/will/employee_101235.parquet")
+val parquetfiledf = spark.read.parquet("/user/will/employeeParq")
 
 //Look for Data in  HDFS
 
@@ -164,16 +164,12 @@ namedf.show()
 -------------------------------------------------------------------------
 val peopleDF = spark.read.format("json").option("multiline", "true").load("/user/will/people.json")
 
-peopleDF.select("name", "age").write.format("parquet").save("/user/will/namesAndAges.parquet")
+peopleDF.select("name", "age").write.format("parquet").save("/user/will/namesAndAges")
 
 --------------------------------------------------------------------------------------------
 val peopleDF = spark.read.format("json").option("multiline", "true").format("json").load("/user/will/people.json")
 
-peopleDF.write.partitionBy("name").format("parquet").save("/user/will/nameAndAgesPartitioned.parquet")
-
-//or whatever the given name is below
-hdfs dfs -cat /user/will/employee_101234.parquet/part-00000-e4605471-4ac7-4621-9ca2-839f24cd08b7-c000.snappy.parquet
-
+peopleDF.write.partitionBy("name").format("parquet").save("/user/will/nameAndAgesPartitioned")
 
 -----------------------------------------------------------------------------------
 //Global Temporary View

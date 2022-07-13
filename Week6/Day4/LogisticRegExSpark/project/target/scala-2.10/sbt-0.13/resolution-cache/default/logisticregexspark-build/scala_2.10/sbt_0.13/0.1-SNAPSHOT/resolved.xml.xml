@@ -4,7 +4,7 @@
 		module="logisticregexspark-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20211110095824"
+		publication="20220712134811"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>

@@ -11,8 +11,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
-      <library name="sbt: sbt-and-plugins">
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library name="sbt: sbt-0.13.18">
         <CLASSES>
           <root url="jar://$USER_HOME$/.sbt/boot/scala-2.10.7/lib/scala-compiler.jar!/" />
           <root url="jar://$USER_HOME$/.sbt/boot/scala-2.10.7/lib/scala-library.jar!/" />
@@ -125,7 +125,8 @@
     </orderEntry>
   </component>
   <component name="SbtModule">
-    <option name="buildForURI" value="file:/C:/Users/William%20Terry/Desktop/LogisticRegExSpark/" />
+    <option name="buildForURI" value="file:/C:/Users/William%20Terry/Desktop/BigDataPythonScalaSpark/Week6/Day4/LogisticRegExSpark/" />
     <option name="imports" value="_root_.sbt.plugins.IvyPlugin, _root_.sbt.plugins.JvmPlugin, _root_.sbt.plugins.CorePlugin, _root_.sbt.plugins.JUnitXmlReportPlugin, _root_.sbt.plugins.Giter8TemplatePlugin, sbt._, Keys._, dsl._" />
+    <option name="resolvers" value="https://repo1.maven.org/maven2/|maven|public, C:\Users\William Terry\.ivy2\cache|ivy|true|Local cache" />
   </component>
 </module>

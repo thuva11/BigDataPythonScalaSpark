@@ -7,7 +7,7 @@ import org.apache.spark.sql.SparkSession
 
 object ModelPersistence extends App {
 
-  System.setProperty("hadoop.home.dir", "C:\\hadoop2")
+  System.setProperty("hadoop.home.dir", "C:\\Hadoop3")
   val spark = SparkSession
     .builder
     .appName("ModelPersistence")
