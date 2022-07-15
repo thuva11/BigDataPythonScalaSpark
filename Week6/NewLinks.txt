@@ -7,3 +7,6 @@ https://sparkbyexamples.com/spark/spark-partitioning-understanding/
 
 //intricate broadcast and accumulator example
 https://supergloo.com/spark-scala/spark-broadcast-accumulator-examples-scala/
+
+//jobs, stage, task, etc
+https://queirozf.com/entries/apache-spark-architecture-overview-clusters-jobs-stages-tasks
