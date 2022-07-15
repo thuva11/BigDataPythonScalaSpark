@@ -1,5 +1,5 @@
 #for zeppelin you can use docker:
-#first install docker on ubuntu
+#first install docker on ubuntu, or if you have Windows then on Windows (and not ubuntu, see wsl install link below)
 
 #https://docs.docker.com/desktop/windows/wsl/ 
 #or https://docs.docker.com/engine/install/ubuntu/
