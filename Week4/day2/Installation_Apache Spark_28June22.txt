@@ -32,7 +32,7 @@ tar xvzf  spark-3.3.0-bin-hadoop3.tgz
 
 
 // Finally, move the unpacked directory spark-3.3.0-bin-hadoop3 to the opt/spark directory.
-sudo mv spark-3.3.0-bin-hadoop3/opt/spark
+sudo mv spark-3.3.0-bin-hadoop3 /opt/spark
 
 
 // The terminal returns no response if it successfully moves the directory. 
