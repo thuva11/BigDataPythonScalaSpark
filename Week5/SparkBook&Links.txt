@@ -30,6 +30,9 @@ https://sparkbyexamples.com/spark/spark-accumulators/
 //Spark Types of StructFields
 https://spark.apache.org/docs/latest/sql-ref-datatypes.html
 
+//spark partitioning
+https://sparkbyexamples.com/spark/spark-partitioning-understanding/
+
 //for loading tables in hive 
 https://sparkbyexamples.com/apache-hive/hive-load-csv-file-into-table/
 

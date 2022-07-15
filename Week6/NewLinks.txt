@@ -1,0 +1,9 @@
+//closures in spark 
+https://mycupoftea00.medium.com/understanding-closure-in-spark-af6f280eebf9
+
+//spark partitioning
+https://sparkbyexamples.com/spark/spark-partitioning-understanding/
+
+
+//intricate broadcast and accumulator example
+https://supergloo.com/spark-scala/spark-broadcast-accumulator-examples-scala/
