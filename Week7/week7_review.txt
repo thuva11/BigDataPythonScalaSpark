@@ -43,7 +43,7 @@ How do we see the logical and physical plans produced to evaluate a DataSet?
 
 How do you add a new coloumn in Dataframes?
 
-How do you rename coloumn in dataframe?
+How do you rename column in dataframe?
 
 What is the difference between inner, outer left, outer right, and outer full joins?
 

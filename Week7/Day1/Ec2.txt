@@ -21,4 +21,4 @@ source ~/.bashrc
 --------------------------
 #in a new ubuntu terminal window from your local computer:
 
-sudo scp -i ~/.ssh/testJuly18.pem HelloWorld.scala ec2-user@ec2-3-138-246-8.us-east-2.compute.amazonaws.com:~/
+sudo scp -i ~/.ssh/testJuly18.pem helloWorld.scala ec2-user@ec2-3-138-246-8.us-east-2.compute.amazonaws.com:~/

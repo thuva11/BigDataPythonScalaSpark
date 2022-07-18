@@ -26,3 +26,8 @@
 
 - What is ETL?
 - What is Audit, Balance and control?
+
+- What is a date warehouse?
+- Give an example of a slowly changing dimension. 
+- What about scd type2?
+- Difference between OLTP vs OLAP? and slowly changing dimensions
