@@ -1,0 +1,11 @@
+//Spark S3 read and write examples
+
+
+https://sparkbyexamples.com/spark/spark-read-write-parquet-file-from-amazon-s3/
+
+https://github.com/spark-examples/spark-amazon-s3-examples/blob/master/src/main/scala/com/sparkbyexamples/spark/ParquetAWSExample.scala
+
+
+
+//with just scala and not Spark
+https://github.com/afiskon/scala-s3-example
