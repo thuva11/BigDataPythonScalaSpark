@@ -1,3 +1,9 @@
 
 //good article on actions and transformations
 https://medium.com/codex/spark-transformation-and-action-a-deep-dive-f351bce88086
+
+
+//sparksession-vs-sparkcontext-vs-sqlcontext-vs-hivecontext
+https://www.hadoopinrealworld.com/sparksession-vs-sparkcontext-vs-sqlcontext-vs-hivecontext/
+
+https://towardsdatascience.com/sparksession-vs-sparkcontext-vs-sqlcontext-vs-hivecontext-741d50c9486a
