@@ -10,3 +10,6 @@ https://supergloo.com/spark-scala/spark-broadcast-accumulator-examples-scala/
 
 //jobs, stage, task, etc
 https://queirozf.com/entries/apache-spark-architecture-overview-clusters-jobs-stages-tasks
+
+//lazy evaluation, actions and transformations good article
+https://medium.com/codex/spark-transformation-and-action-a-deep-dive-f351bce88086
