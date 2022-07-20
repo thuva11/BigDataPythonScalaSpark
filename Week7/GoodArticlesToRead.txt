@@ -2,8 +2,12 @@
 //good article on actions and transformations
 https://medium.com/codex/spark-transformation-and-action-a-deep-dive-f351bce88086
 
+//wide vs narrow transformations
+https://sauravomar01.medium.com/wide-vs-narrow-dependencies-in-apache-spark-2cd33bf7ed7d
+
 
 //sparksession-vs-sparkcontext-vs-sqlcontext-vs-hivecontext
 https://www.hadoopinrealworld.com/sparksession-vs-sparkcontext-vs-sqlcontext-vs-hivecontext/
 
 https://towardsdatascience.com/sparksession-vs-sparkcontext-vs-sqlcontext-vs-hivecontext-741d50c9486a
+
