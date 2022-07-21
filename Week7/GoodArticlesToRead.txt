@@ -11,3 +11,6 @@ https://www.hadoopinrealworld.com/sparksession-vs-sparkcontext-vs-sqlcontext-vs-
 
 https://towardsdatascience.com/sparksession-vs-sparkcontext-vs-sqlcontext-vs-hivecontext-741d50c9486a
 
+
+//RDDs, Datasets, Dataframs
+https://databricks.com/blog/2016/07/14/a-tale-of-three-apache-spark-apis-rdds-dataframes-and-datasets.html
