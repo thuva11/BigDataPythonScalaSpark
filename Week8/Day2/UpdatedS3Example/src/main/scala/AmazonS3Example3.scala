@@ -6,13 +6,13 @@ import com.amazonaws.services.s3.{AmazonS3, AmazonS3ClientBuilder}
 import java.io.File
 
 object AmazonS3Example3 extends App {
-  val accessKey = "BFHELSUVENFEMDU8"
-  val secretKey = "gkd/73HGJRJEkghenjcjwhdiefjrks923"
-  val bucketName = "willsbucket1"
+  val accessKey = "BdfgdfbsdasdvPVV8912"
+  val secretKey = "gjsdhmrkdhwbrjfnejd87"
+  val bucketName = "willnewbucketjuly26"
 
-  val credentials = new BasicAWSCredentials(accessKey, secretKey)
   val creds:BasicAWSCredentials = new BasicAWSCredentials(accessKey, secretKey);
   val client:AmazonS3 = AmazonS3ClientBuilder.standard().withCredentials(new AWSStaticCredentialsProvider(creds)).withRegion(Regions.US_EAST_2).build()
+
 
   client.putObject(bucketName,"test5",new File("C:\\input\\Bev_BranchA.txt"))
   println(client.getUrl(bucketName,"test5"))
