@@ -6,6 +6,7 @@ import com.amazonaws.services.s3.{AmazonS3, AmazonS3ClientBuilder}
 import java.io.File
 
 object AmazonS3Example3 extends App {
+  //do not actually upload your keys to Github, these are not my actual keys
   val accessKey = "BdfgdfbsdasdvPVV8912"
   val secretKey = "gjsdhmrkdhwbrjfnejd87"
   val bucketName = "willnewbucketjuly26"
